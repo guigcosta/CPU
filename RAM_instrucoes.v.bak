@@ -1,0 +1,26 @@
+module RAM_instrucoes (end_linha, end_coluna, clock, saida);
+
+input [10:0] end_linha;
+input [10:0] end_coluna;
+input clock;
+output [31:0] saida;
+
+integer start = 0;
+
+reg [31:0] ram_instrucoes[10:0][10:0];
+
+always @ (posedge clock) begin
+	if(start == 0)begin
+		//ram_instrucoes[0][0] = 32'b01111000000000000000000000000001; // load 1 no registrador 00000
+		//ram_instrucoes[0][1] = 32'b01111000010000000000000000000001; // load 1 no registrador 00001
+		ram_instrucoes[0][0] = 32'b11001000000000000000000000000000; // NOP
+		ram_instrucoes[0][1] = 32'b00000000110000100010000000000000; // coloca a soma dos registradores 00011 e 00010 em 00001
+		ram_instrucoes[0][2] = 32'b10000000010000000000000000000000; // store o valor do registrador 00001 no primeiro endereco de memoria
+		ram_instrucoes[0][3] = 32'b11010000000000000000000000000000; // HLT
+		
+		start <= 1;
+	end
+end
+
+assign saida = ram_instrucoes[end_linha][end_coluna];
+endmodule

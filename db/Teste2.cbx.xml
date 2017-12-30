@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Teste2">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Testef2|CPU:inst7|ULA:inst5|lpm_mult:Mult0" CBX_FILE_NAME="mult_7dt.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
