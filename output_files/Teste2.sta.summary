@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CPU:inst7|PC:inst|contador_coluna[0]'
+Slack : -11.569
+TNS   : -344.020
+
+Type  : Slow 1200mV 85C Model Setup 'DeBounce:inst8|DB_out'
+Slack : -8.520
+TNS   : -7588.413
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -1.366
+TNS   : -12.245
+
+Type  : Slow 1200mV 85C Model Hold 'CPU:inst7|PC:inst|contador_coluna[0]'
+Slack : -5.145
+TNS   : -130.590
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : -1.362
+TNS   : -1.362
+
+Type  : Slow 1200mV 85C Model Hold 'DeBounce:inst8|DB_out'
+Slack : -0.683
+TNS   : -1.111
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -20.990
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DeBounce:inst8|DB_out'
+Slack : -1.285
+TNS   : -1423.780
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CPU:inst7|PC:inst|contador_coluna[0]'
+Slack : -0.846
+TNS   : -115.609
+
+Type  : Slow 1200mV 0C Model Setup 'CPU:inst7|PC:inst|contador_coluna[0]'
+Slack : -10.696
+TNS   : -317.614
+
+Type  : Slow 1200mV 0C Model Setup 'DeBounce:inst8|DB_out'
+Slack : -7.817
+TNS   : -6945.395
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -1.111
+TNS   : -9.903
+
+Type  : Slow 1200mV 0C Model Hold 'CPU:inst7|PC:inst|contador_coluna[0]'
+Slack : -4.720
+TNS   : -120.290
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : -1.188
+TNS   : -1.188
+
+Type  : Slow 1200mV 0C Model Hold 'DeBounce:inst8|DB_out'
+Slack : -0.573
+TNS   : -0.947
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -20.990
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DeBounce:inst8|DB_out'
+Slack : -1.285
+TNS   : -1423.780
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CPU:inst7|PC:inst|contador_coluna[0]'
+Slack : -0.682
+TNS   : -97.572
+
+Type  : Fast 1200mV 0C Model Setup 'CPU:inst7|PC:inst|contador_coluna[0]'
+Slack : -5.237
+TNS   : -154.589
+
+Type  : Fast 1200mV 0C Model Setup 'DeBounce:inst8|DB_out'
+Slack : -3.606
+TNS   : -3101.656
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -0.162
+TNS   : -0.341
+
+Type  : Fast 1200mV 0C Model Hold 'CPU:inst7|PC:inst|contador_coluna[0]'
+Slack : -2.718
+TNS   : -70.930
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : -0.901
+TNS   : -0.901
+
+Type  : Fast 1200mV 0C Model Hold 'DeBounce:inst8|DB_out'
+Slack : -0.554
+TNS   : -1.074
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -17.884
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DeBounce:inst8|DB_out'
+Slack : -1.000
+TNS   : -1108.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CPU:inst7|PC:inst|contador_coluna[0]'
+Slack : -0.347
+TNS   : -25.217
+
+------------------------------------------------------------
