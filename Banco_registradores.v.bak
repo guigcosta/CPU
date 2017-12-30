@@ -1,0 +1,50 @@
+module Banco_registradores (end_leitura1, end_leitura2, end_escrita, clock, write_reg, dados_escrita, read_RD, read_RS, read_RT);
+
+	input [4:0] end_leitura1;
+	input [4:0] end_leitura2;
+	input [4:0] end_escrita;
+
+	input clock;
+
+	input write_reg;
+
+	
+	input [31:0] dados_escrita;
+	
+	output [31:0] read_RS;
+	output [31:0] read_RD;
+	output [31:0] read_RT;
+	
+	integer startReg = 0;
+	
+	
+
+	reg [31:0] registradores [31:0];
+
+		
+	always @ (posedge clock) begin
+	
+		
+		// cria estado inicial?
+		if (startReg == 0) begin
+			registradores[00] = 32'b00000000000000000000000000000000;
+			registradores[01] = 32'b00000000000000000000000000000001;
+			registradores[02] = 32'b00000000000000000000000000000001;
+			startReg <= 1;
+		end
+		//
+
+	
+		if(write_reg) begin
+			registradores [end_escrita] = dados_escrita;
+		end
+	
+	end 
+	
+	
+	
+	assign read_RD = registradores [end_escrita];
+	assign read_RS = registradores [end_leitura1];
+	assign read_RT = registradores [end_leitura2];
+
+endmodule
